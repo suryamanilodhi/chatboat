@@ -1,0 +1,50 @@
+
+.parameter-controls {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .control {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .control span {
+    margin-right: 10px;
+  }
+  
+  .control .value {
+   margin-left: -8px;
+    font-weight: bold;
+    padding: 5px 10px; 
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;  
+  }
+  
+  .control input[type="range"] {
+    flex: 1;
+    margin: 0 10px;
+    accent-color: blue; 
+  }
+  
+  @media (max-width: 768px) {
+    .control {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .control span {
+      margin-bottom: 5px;
+    }
+  
+    .control .value {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+  
